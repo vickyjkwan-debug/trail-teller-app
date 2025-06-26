@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC9EA6D42E0CDD4800C6FCCB /* waypoint_storiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D32E0CDD4800C6FCCB /* waypoint_storiesApp.swift */; };
+		DC9EA6D62E0CDD4800C6FCCB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D52E0CDD4800C6FCCB /* Persistence.swift */; };
+		DC9EA6D92E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D72E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld */; };
+		DC9EA6DB2E0CDD4800C6FCCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6DA2E0CDD4800C6FCCB /* ContentView.swift */; };
+		DC9EA6DD2E0CDD4A00C6FCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9EA6DC2E0CDD4A00C6FCCB /* Assets.xcassets */; };
+		DC9EA6E12E0CDD4A00C6FCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9EA6E02E0CDD4A00C6FCCB /* Preview Assets.xcassets */; };
+		DC9EA6EB2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6EA2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift */; };
+		DC9EA6F52E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6F42E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift */; };
+		DC9EA6F72E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6F62E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC9EA6E72E0CDD4B00C6FCCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC9EA6C82E0CDD4800C6FCCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC9EA6CF2E0CDD4800C6FCCB;
+			remoteInfo = waypoint_stories;
+		};
+		DC9EA6F12E0CDD4B00C6FCCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC9EA6C82E0CDD4800C6FCCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC9EA6CF2E0CDD4800C6FCCB;
+			remoteInfo = waypoint_stories;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC9EA6D02E0CDD4800C6FCCB /* waypoint_stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waypoint_stories.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9EA6D32E0CDD4800C6FCCB /* waypoint_storiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waypoint_storiesApp.swift; sourceTree = "<group>"; };
+		DC9EA6D52E0CDD4800C6FCCB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		DC9EA6D82E0CDD4800C6FCCB /* waypoint_stories.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = waypoint_stories.xcdatamodel; sourceTree = "<group>"; };
+		DC9EA6DA2E0CDD4800C6FCCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC9EA6DC2E0CDD4A00C6FCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC9EA6DE2E0CDD4A00C6FCCB /* waypoint_stories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = waypoint_stories.entitlements; sourceTree = "<group>"; };
+		DC9EA6E02E0CDD4A00C6FCCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC9EA6E62E0CDD4B00C6FCCB /* waypoint_storiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = waypoint_storiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9EA6EA2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waypoint_storiesTests.swift; sourceTree = "<group>"; };
+		DC9EA6F02E0CDD4B00C6FCCB /* waypoint_storiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = waypoint_storiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9EA6F42E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waypoint_storiesUITests.swift; sourceTree = "<group>"; };
+		DC9EA6F62E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waypoint_storiesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC9EA6CD2E0CDD4800C6FCCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9EA6E32E0CDD4B00C6FCCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9EA6ED2E0CDD4B00C6FCCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC9EA6C72E0CDD4800C6FCCB = {
+			isa = PBXGroup;
+			children = (
+				DC9EA6D22E0CDD4800C6FCCB /* waypoint_stories */,
+				DC9EA6E92E0CDD4B00C6FCCB /* waypoint_storiesTests */,
+				DC9EA6F32E0CDD4B00C6FCCB /* waypoint_storiesUITests */,
+				DC9EA6D12E0CDD4800C6FCCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC9EA6D12E0CDD4800C6FCCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9EA6D02E0CDD4800C6FCCB /* waypoint_stories.app */,
+				DC9EA6E62E0CDD4B00C6FCCB /* waypoint_storiesTests.xctest */,
+				DC9EA6F02E0CDD4B00C6FCCB /* waypoint_storiesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC9EA6D22E0CDD4800C6FCCB /* waypoint_stories */ = {
+			isa = PBXGroup;
+			children = (
+				DC9EA6D32E0CDD4800C6FCCB /* waypoint_storiesApp.swift */,
+				DC9EA6D52E0CDD4800C6FCCB /* Persistence.swift */,
+				DC9EA6DA2E0CDD4800C6FCCB /* ContentView.swift */,
+				DC9EA6DC2E0CDD4A00C6FCCB /* Assets.xcassets */,
+				DC9EA6DE2E0CDD4A00C6FCCB /* waypoint_stories.entitlements */,
+				DC9EA6D72E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld */,
+				DC9EA6DF2E0CDD4A00C6FCCB /* Preview Content */,
+			);
+			path = waypoint_stories;
+			sourceTree = "<group>";
+		};
+		DC9EA6DF2E0CDD4A00C6FCCB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC9EA6E02E0CDD4A00C6FCCB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC9EA6E92E0CDD4B00C6FCCB /* waypoint_storiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC9EA6EA2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift */,
+			);
+			path = waypoint_storiesTests;
+			sourceTree = "<group>";
+		};
+		DC9EA6F32E0CDD4B00C6FCCB /* waypoint_storiesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC9EA6F42E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift */,
+				DC9EA6F62E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift */,
+			);
+			path = waypoint_storiesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC9EA6CF2E0CDD4800C6FCCB /* waypoint_stories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9EA6FA2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_stories" */;
+			buildPhases = (
+				DC9EA6CC2E0CDD4800C6FCCB /* Sources */,
+				DC9EA6CD2E0CDD4800C6FCCB /* Frameworks */,
+				DC9EA6CE2E0CDD4800C6FCCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = waypoint_stories;
+			productName = waypoint_stories;
+			productReference = DC9EA6D02E0CDD4800C6FCCB /* waypoint_stories.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC9EA6E52E0CDD4B00C6FCCB /* waypoint_storiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9EA6FD2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_storiesTests" */;
+			buildPhases = (
+				DC9EA6E22E0CDD4B00C6FCCB /* Sources */,
+				DC9EA6E32E0CDD4B00C6FCCB /* Frameworks */,
+				DC9EA6E42E0CDD4B00C6FCCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC9EA6E82E0CDD4B00C6FCCB /* PBXTargetDependency */,
+			);
+			name = waypoint_storiesTests;
+			productName = waypoint_storiesTests;
+			productReference = DC9EA6E62E0CDD4B00C6FCCB /* waypoint_storiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC9EA6EF2E0CDD4B00C6FCCB /* waypoint_storiesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9EA7002E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_storiesUITests" */;
+			buildPhases = (
+				DC9EA6EC2E0CDD4B00C6FCCB /* Sources */,
+				DC9EA6ED2E0CDD4B00C6FCCB /* Frameworks */,
+				DC9EA6EE2E0CDD4B00C6FCCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC9EA6F22E0CDD4B00C6FCCB /* PBXTargetDependency */,
+			);
+			name = waypoint_storiesUITests;
+			productName = waypoint_storiesUITests;
+			productReference = DC9EA6F02E0CDD4B00C6FCCB /* waypoint_storiesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC9EA6C82E0CDD4800C6FCCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DC9EA6CF2E0CDD4800C6FCCB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DC9EA6E52E0CDD4B00C6FCCB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DC9EA6CF2E0CDD4800C6FCCB;
+					};
+					DC9EA6EF2E0CDD4B00C6FCCB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DC9EA6CF2E0CDD4800C6FCCB;
+					};
+				};
+			};
+			buildConfigurationList = DC9EA6CB2E0CDD4800C6FCCB /* Build configuration list for PBXProject "waypoint_stories" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC9EA6C72E0CDD4800C6FCCB;
+			productRefGroup = DC9EA6D12E0CDD4800C6FCCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC9EA6CF2E0CDD4800C6FCCB /* waypoint_stories */,
+				DC9EA6E52E0CDD4B00C6FCCB /* waypoint_storiesTests */,
+				DC9EA6EF2E0CDD4B00C6FCCB /* waypoint_storiesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC9EA6CE2E0CDD4800C6FCCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9EA6E12E0CDD4A00C6FCCB /* Preview Assets.xcassets in Resources */,
+				DC9EA6DD2E0CDD4A00C6FCCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9EA6E42E0CDD4B00C6FCCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9EA6EE2E0CDD4B00C6FCCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC9EA6CC2E0CDD4800C6FCCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9EA6D92E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld in Sources */,
+				DC9EA6D42E0CDD4800C6FCCB /* waypoint_storiesApp.swift in Sources */,
+				DC9EA6DB2E0CDD4800C6FCCB /* ContentView.swift in Sources */,
+				DC9EA6D62E0CDD4800C6FCCB /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9EA6E22E0CDD4B00C6FCCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9EA6EB2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9EA6EC2E0CDD4B00C6FCCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9EA6F52E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift in Sources */,
+				DC9EA6F72E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC9EA6E82E0CDD4B00C6FCCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC9EA6CF2E0CDD4800C6FCCB /* waypoint_stories */;
+			targetProxy = DC9EA6E72E0CDD4B00C6FCCB /* PBXContainerItemProxy */;
+		};
+		DC9EA6F22E0CDD4B00C6FCCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC9EA6CF2E0CDD4800C6FCCB /* waypoint_stories */;
+			targetProxy = DC9EA6F12E0CDD4B00C6FCCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DC9EA6F82E0CDD4B00C6FCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC9EA6F92E0CDD4B00C6FCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DC9EA6FB2E0CDD4B00C6FCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = waypoint_stories/waypoint_stories.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"waypoint_stories/Preview Content\"";
+				DEVELOPMENT_TEAM = ANK327TBKQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-stories";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC9EA6FC2E0CDD4B00C6FCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = waypoint_stories/waypoint_stories.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"waypoint_stories/Preview Content\"";
+				DEVELOPMENT_TEAM = ANK327TBKQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-stories";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC9EA6FE2E0CDD4B00C6FCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANK327TBKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-storiesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/waypoint_stories.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/waypoint_stories";
+			};
+			name = Debug;
+		};
+		DC9EA6FF2E0CDD4B00C6FCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANK327TBKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-storiesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/waypoint_stories.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/waypoint_stories";
+			};
+			name = Release;
+		};
+		DC9EA7012E0CDD4B00C6FCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANK327TBKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-storiesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = waypoint_stories;
+			};
+			name = Debug;
+		};
+		DC9EA7022E0CDD4B00C6FCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANK327TBKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-storiesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = waypoint_stories;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC9EA6CB2E0CDD4800C6FCCB /* Build configuration list for PBXProject "waypoint_stories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9EA6F82E0CDD4B00C6FCCB /* Debug */,
+				DC9EA6F92E0CDD4B00C6FCCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9EA6FA2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_stories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9EA6FB2E0CDD4B00C6FCCB /* Debug */,
+				DC9EA6FC2E0CDD4B00C6FCCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9EA6FD2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_storiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9EA6FE2E0CDD4B00C6FCCB /* Debug */,
+				DC9EA6FF2E0CDD4B00C6FCCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9EA7002E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_storiesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9EA7012E0CDD4B00C6FCCB /* Debug */,
+				DC9EA7022E0CDD4B00C6FCCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC9EA6D72E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC9EA6D82E0CDD4800C6FCCB /* waypoint_stories.xcdatamodel */,
+			);
+			currentVersion = DC9EA6D82E0CDD4800C6FCCB /* waypoint_stories.xcdatamodel */;
+			path = waypoint_stories.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DC9EA6C82E0CDD4800C6FCCB /* Project object */;
+}
