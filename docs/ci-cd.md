@@ -12,7 +12,16 @@ It runs on:
 - every pull request
 - manual runs from the GitHub Actions tab
 
-The job checks out the repo, selects Xcode 16.4 on a macOS 15 runner, and runs:
+It now has two jobs:
+
+- `build-and-unit-tests`:
+  Runs on every push, pull request, and manual run. Executes unit tests only (fast path for PRs).
+- `ui-tests`:
+  Runs on pushes to `main` and manual runs. Executes UI tests (slower path).
+
+Both jobs use Xcode 16.4 on a macOS 15 runner and target an iOS simulator destination.
+
+### Unit test lane command
 
 ```sh
 xcodebuild \
@@ -21,10 +30,34 @@ xcodebuild \
   -configuration Debug \
   -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
   test \
+  -only-testing:TrailTellerTests \
   CODE_SIGNING_ALLOWED=NO
 ```
 
-`CODE_SIGNING_ALLOWED=NO` keeps normal pull request CI from needing Apple signing certificates. If tests fail, the workflow uploads a `TrailTeller.xcresult` artifact that Xcode can open for details.
+### UI test lane command
+
+```sh
+xcodebuild \
+  -project TrailTeller.xcodeproj \
+  -scheme TrailTeller \
+  -configuration Debug \
+  -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+  test \
+  -only-testing:TrailTellerUITests \
+  CODE_SIGNING_ALLOWED=NO
+```
+
+`CODE_SIGNING_ALLOWED=NO` keeps CI from needing signing certificates for simulator test lanes. On failure, the workflow uploads result bundles (`TrailTeller-Unit.xcresult` or `TrailTeller-UI.xcresult`) that Xcode can open for details.
+
+### Caching
+
+The workflow restores/saves caches for:
+
+- `.ci/DerivedData`
+- `~/.swiftpm`
+- `~/Library/Caches/org.swift.swiftpm`
+
+The first run on a branch is usually slower (cache miss). Later runs with similar source/project state usually get faster.
 
 ## Why The Shared Scheme Matters
 
@@ -38,7 +71,7 @@ GitHub checks out only committed files. Xcode schemes often start as local user 
 4. Open the `iOS CI` workflow run.
 5. Treat a green check as "builds and tests pass on a clean Mac."
 
-After the first green run, consider enabling branch protection in GitHub so pull requests cannot merge unless `iOS CI / Build and test` passes.
+After the first green run, consider enabling branch protection in GitHub so pull requests cannot merge unless `iOS CI / Build and unit tests` passes.
 
 ## What CD Needs Later
 
@@ -56,3 +89,28 @@ A practical next step is a second workflow that runs only on tags or manual disp
 ## Keeping Actions Fresh
 
 `.github/dependabot.yml` asks Dependabot to open weekly pull requests when GitHub Actions versions need updates.
+
+## Local Pre-Commit Hooks
+
+This repo also includes `.pre-commit-config.yaml` for local guardrails before code reaches CI.
+
+It runs:
+
+- `swiftformat` on changed `.swift` files at commit time
+- `swiftlint lint --strict` on changed `.swift` files at commit time
+- `xcodebuild ... build-for-testing` on push (iOS Simulator target, no code signing)
+
+Install once on your machine:
+
+```sh
+brew install pre-commit swiftformat swiftlint
+pre-commit install
+pre-commit install --hook-type pre-push
+```
+
+Run manually any time:
+
+```sh
+pre-commit run --all-files
+pre-commit run --hook-stage pre-push --all-files
+```
