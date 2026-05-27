@@ -100,6 +100,12 @@ It runs:
 - `swiftlint lint --strict` on changed `.swift` files at commit time
 - `xcodebuild ... build-for-testing` on push (iOS Simulator target, no code signing)
 
+Hook speed notes:
+
+- `pre-commit` is configured with `fail_fast: true`, so it stops at the first failing hook.
+- `swiftlint` runs in script-input-files mode on staged Swift files instead of broad repo linting.
+- First run is usually slower than later runs.
+
 Install once on your machine:
 
 ```sh

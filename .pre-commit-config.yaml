@@ -1,4 +1,5 @@
 minimum_pre_commit_version: "3.7.0"
+fail_fast: true
 default_install_hook_types:
   - pre-commit
   - pre-push
@@ -7,17 +8,21 @@ repos:
     hooks:
       - id: swiftformat
         name: swiftformat
-        entry: swiftformat --quiet
+        entry: >-
+          bash -lc 'if [ "$#" -eq 0 ]; then exit 0; fi; swiftformat --quiet "$@"' --
         language: system
-        files: \.swift$
+        types:
+          - swift
         stages:
           - pre-commit
 
       - id: swiftlint
         name: swiftlint
-        entry: swiftlint lint --strict --force-exclude
+        entry: >-
+          bash -lc 'if [ "$#" -eq 0 ]; then exit 0; fi; i=0; for f in "$@"; do export "SCRIPT_INPUT_FILE_${i}=$f"; i=$((i+1)); done; export SCRIPT_INPUT_FILE_COUNT="$i"; swiftlint lint --strict --force-exclude --use-script-input-files'
         language: system
-        files: \.swift$
+        types:
+          - swift
         stages:
           - pre-commit
 
