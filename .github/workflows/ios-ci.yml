@@ -1,0 +1,76 @@
+name: iOS CI
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PROJECT: TrailTeller.xcodeproj
+  SCHEME: TrailTeller
+  CONFIGURATION: Debug
+  DESTINATION: platform=iOS Simulator,name=iPhone 16,OS=latest
+  DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+
+jobs:
+  build-and-test:
+    name: Build and test
+    runs-on: macos-15
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Show build environment
+        run: |
+          xcodebuild -version
+          xcodebuild -showsdks
+          xcodebuild -list -project "$PROJECT"
+
+      - name: Build and test
+        run: |
+          set -euo pipefail
+
+          RESULT_BUNDLE_PATH="$RUNNER_TEMP/TrailTeller.xcresult"
+          rm -rf "$RESULT_BUNDLE_PATH"
+
+          if command -v xcbeautify >/dev/null; then
+            xcodebuild \
+              -project "$PROJECT" \
+              -scheme "$SCHEME" \
+              -configuration "$CONFIGURATION" \
+              -destination "$DESTINATION" \
+              -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+              -resultBundlePath "$RESULT_BUNDLE_PATH" \
+              -showBuildTimingSummary \
+              test \
+              CODE_SIGNING_ALLOWED=NO | xcbeautify
+          else
+            xcodebuild \
+              -project "$PROJECT" \
+              -scheme "$SCHEME" \
+              -configuration "$CONFIGURATION" \
+              -destination "$DESTINATION" \
+              -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+              -resultBundlePath "$RESULT_BUNDLE_PATH" \
+              -showBuildTimingSummary \
+              test \
+              CODE_SIGNING_ALLOWED=NO
+          fi
+
+      - name: Upload Xcode result bundle
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: TrailTeller.xcresult
+          path: ${{ runner.temp }}/TrailTeller.xcresult
+          if-no-files-found: ignore
+          retention-days: 7
