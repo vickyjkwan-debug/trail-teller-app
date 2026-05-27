@@ -1,13 +1,13 @@
 //
-//  waypoint_storiesTests.swift
-//  waypoint_storiesTests
+//  TrailTellerTests.swift
+//  TrailTellerTests
 //
 //  Created by Victoria Kwan on 6/25/25.
 //
 
 import XCTest
 
-final class waypoint_storiesTests: XCTestCase {
+final class TrailTellerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

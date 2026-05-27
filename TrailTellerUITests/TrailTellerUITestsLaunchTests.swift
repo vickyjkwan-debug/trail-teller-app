@@ -1,13 +1,13 @@
 //
-//  waypoint_storiesUITestsLaunchTests.swift
-//  waypoint_storiesUITests
+//  TrailTellerUITestsLaunchTests.swift
+//  TrailTellerUITests
 //
 //  Created by Victoria Kwan on 6/25/25.
 //
 
 import XCTest
 
-final class waypoint_storiesUITestsLaunchTests: XCTestCase {
+final class TrailTellerUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
