@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC9EA6D42E0CDD4800C6FCCB /* waypoint_storiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D32E0CDD4800C6FCCB /* waypoint_storiesApp.swift */; };
+		DC9EA6D42E0CDD4800C6FCCB /* TrailTellerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D32E0CDD4800C6FCCB /* TrailTellerApp.swift */; };
 		DC9EA6D62E0CDD4800C6FCCB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D52E0CDD4800C6FCCB /* Persistence.swift */; };
-		DC9EA6D92E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D72E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld */; };
+		DC9EA6D92E0CDD4800C6FCCB /* TrailTeller.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D72E0CDD4800C6FCCB /* TrailTeller.xcdatamodeld */; };
 		DC9EA6DB2E0CDD4800C6FCCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6DA2E0CDD4800C6FCCB /* ContentView.swift */; };
 		DC9EA6DD2E0CDD4A00C6FCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9EA6DC2E0CDD4A00C6FCCB /* Assets.xcassets */; };
 		DC9EA6E12E0CDD4A00C6FCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9EA6E02E0CDD4A00C6FCCB /* Preview Assets.xcassets */; };
-		DC9EA6EB2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6EA2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift */; };
-		DC9EA6F52E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6F42E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift */; };
-		DC9EA6F72E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6F62E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift */; };
+		DC9EA6EB2E0CDD4B00C6FCCB /* TrailTellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6EA2E0CDD4B00C6FCCB /* TrailTellerTests.swift */; };
+		DC9EA6F52E0CDD4B00C6FCCB /* TrailTellerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6F42E0CDD4B00C6FCCB /* TrailTellerUITests.swift */; };
+		DC9EA6F72E0CDD4B00C6FCCB /* TrailTellerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6F62E0CDD4B00C6FCCB /* TrailTellerUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,31 +24,31 @@
 			containerPortal = DC9EA6C82E0CDD4800C6FCCB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DC9EA6CF2E0CDD4800C6FCCB;
-			remoteInfo = waypoint_stories;
+			remoteInfo = TrailTeller;
 		};
 		DC9EA6F12E0CDD4B00C6FCCB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC9EA6C82E0CDD4800C6FCCB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DC9EA6CF2E0CDD4800C6FCCB;
-			remoteInfo = waypoint_stories;
+			remoteInfo = TrailTeller;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC9EA6D02E0CDD4800C6FCCB /* waypoint_stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waypoint_stories.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC9EA6D32E0CDD4800C6FCCB /* waypoint_storiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waypoint_storiesApp.swift; sourceTree = "<group>"; };
+		DC9EA6D02E0CDD4800C6FCCB /* TrailTeller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailTeller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9EA6D32E0CDD4800C6FCCB /* TrailTellerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailTellerApp.swift; sourceTree = "<group>"; };
 		DC9EA6D52E0CDD4800C6FCCB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		DC9EA6D82E0CDD4800C6FCCB /* waypoint_stories.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = waypoint_stories.xcdatamodel; sourceTree = "<group>"; };
+		DC9EA6D82E0CDD4800C6FCCB /* TrailTeller.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrailTeller.xcdatamodel; sourceTree = "<group>"; };
 		DC9EA6DA2E0CDD4800C6FCCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC9EA6DC2E0CDD4A00C6FCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DC9EA6DE2E0CDD4A00C6FCCB /* waypoint_stories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = waypoint_stories.entitlements; sourceTree = "<group>"; };
+		DC9EA6DE2E0CDD4A00C6FCCB /* TrailTeller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrailTeller.entitlements; sourceTree = "<group>"; };
 		DC9EA6E02E0CDD4A00C6FCCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DC9EA6E62E0CDD4B00C6FCCB /* waypoint_storiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = waypoint_storiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC9EA6EA2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waypoint_storiesTests.swift; sourceTree = "<group>"; };
-		DC9EA6F02E0CDD4B00C6FCCB /* waypoint_storiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = waypoint_storiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC9EA6F42E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waypoint_storiesUITests.swift; sourceTree = "<group>"; };
-		DC9EA6F62E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waypoint_storiesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC9EA6E62E0CDD4B00C6FCCB /* TrailTellerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrailTellerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9EA6EA2E0CDD4B00C6FCCB /* TrailTellerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailTellerTests.swift; sourceTree = "<group>"; };
+		DC9EA6F02E0CDD4B00C6FCCB /* TrailTellerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrailTellerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9EA6F42E0CDD4B00C6FCCB /* TrailTellerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailTellerUITests.swift; sourceTree = "<group>"; };
+		DC9EA6F62E0CDD4B00C6FCCB /* TrailTellerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailTellerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 		DC9EA6C72E0CDD4800C6FCCB = {
 			isa = PBXGroup;
 			children = (
-				DC9EA6D22E0CDD4800C6FCCB /* waypoint_stories */,
-				DC9EA6E92E0CDD4B00C6FCCB /* waypoint_storiesTests */,
-				DC9EA6F32E0CDD4B00C6FCCB /* waypoint_storiesUITests */,
+				DC9EA6D22E0CDD4800C6FCCB /* TrailTeller */,
+				DC9EA6E92E0CDD4B00C6FCCB /* TrailTellerTests */,
+				DC9EA6F32E0CDD4B00C6FCCB /* TrailTellerUITests */,
 				DC9EA6D12E0CDD4800C6FCCB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,25 +89,25 @@
 		DC9EA6D12E0CDD4800C6FCCB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC9EA6D02E0CDD4800C6FCCB /* waypoint_stories.app */,
-				DC9EA6E62E0CDD4B00C6FCCB /* waypoint_storiesTests.xctest */,
-				DC9EA6F02E0CDD4B00C6FCCB /* waypoint_storiesUITests.xctest */,
+				DC9EA6D02E0CDD4800C6FCCB /* TrailTeller.app */,
+				DC9EA6E62E0CDD4B00C6FCCB /* TrailTellerTests.xctest */,
+				DC9EA6F02E0CDD4B00C6FCCB /* TrailTellerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC9EA6D22E0CDD4800C6FCCB /* waypoint_stories */ = {
+		DC9EA6D22E0CDD4800C6FCCB /* TrailTeller */ = {
 			isa = PBXGroup;
 			children = (
-				DC9EA6D32E0CDD4800C6FCCB /* waypoint_storiesApp.swift */,
+				DC9EA6D32E0CDD4800C6FCCB /* TrailTellerApp.swift */,
 				DC9EA6D52E0CDD4800C6FCCB /* Persistence.swift */,
 				DC9EA6DA2E0CDD4800C6FCCB /* ContentView.swift */,
 				DC9EA6DC2E0CDD4A00C6FCCB /* Assets.xcassets */,
-				DC9EA6DE2E0CDD4A00C6FCCB /* waypoint_stories.entitlements */,
-				DC9EA6D72E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld */,
+				DC9EA6DE2E0CDD4A00C6FCCB /* TrailTeller.entitlements */,
+				DC9EA6D72E0CDD4800C6FCCB /* TrailTeller.xcdatamodeld */,
 				DC9EA6DF2E0CDD4A00C6FCCB /* Preview Content */,
 			);
-			path = waypoint_stories;
+			path = TrailTeller;
 			sourceTree = "<group>";
 		};
 		DC9EA6DF2E0CDD4A00C6FCCB /* Preview Content */ = {
@@ -118,29 +118,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DC9EA6E92E0CDD4B00C6FCCB /* waypoint_storiesTests */ = {
+		DC9EA6E92E0CDD4B00C6FCCB /* TrailTellerTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC9EA6EA2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift */,
+				DC9EA6EA2E0CDD4B00C6FCCB /* TrailTellerTests.swift */,
 			);
-			path = waypoint_storiesTests;
+			path = TrailTellerTests;
 			sourceTree = "<group>";
 		};
-		DC9EA6F32E0CDD4B00C6FCCB /* waypoint_storiesUITests */ = {
+		DC9EA6F32E0CDD4B00C6FCCB /* TrailTellerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DC9EA6F42E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift */,
-				DC9EA6F62E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift */,
+				DC9EA6F42E0CDD4B00C6FCCB /* TrailTellerUITests.swift */,
+				DC9EA6F62E0CDD4B00C6FCCB /* TrailTellerUITestsLaunchTests.swift */,
 			);
-			path = waypoint_storiesUITests;
+			path = TrailTellerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC9EA6CF2E0CDD4800C6FCCB /* waypoint_stories */ = {
+		DC9EA6CF2E0CDD4800C6FCCB /* TrailTeller */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC9EA6FA2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_stories" */;
+			buildConfigurationList = DC9EA6FA2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "TrailTeller" */;
 			buildPhases = (
 				DC9EA6CC2E0CDD4800C6FCCB /* Sources */,
 				DC9EA6CD2E0CDD4800C6FCCB /* Frameworks */,
@@ -150,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = waypoint_stories;
-			productName = waypoint_stories;
-			productReference = DC9EA6D02E0CDD4800C6FCCB /* waypoint_stories.app */;
+			name = TrailTeller;
+			productName = TrailTeller;
+			productReference = DC9EA6D02E0CDD4800C6FCCB /* TrailTeller.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC9EA6E52E0CDD4B00C6FCCB /* waypoint_storiesTests */ = {
+		DC9EA6E52E0CDD4B00C6FCCB /* TrailTellerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC9EA6FD2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_storiesTests" */;
+			buildConfigurationList = DC9EA6FD2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "TrailTellerTests" */;
 			buildPhases = (
 				DC9EA6E22E0CDD4B00C6FCCB /* Sources */,
 				DC9EA6E32E0CDD4B00C6FCCB /* Frameworks */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				DC9EA6E82E0CDD4B00C6FCCB /* PBXTargetDependency */,
 			);
-			name = waypoint_storiesTests;
-			productName = waypoint_storiesTests;
-			productReference = DC9EA6E62E0CDD4B00C6FCCB /* waypoint_storiesTests.xctest */;
+			name = TrailTellerTests;
+			productName = TrailTellerTests;
+			productReference = DC9EA6E62E0CDD4B00C6FCCB /* TrailTellerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DC9EA6EF2E0CDD4B00C6FCCB /* waypoint_storiesUITests */ = {
+		DC9EA6EF2E0CDD4B00C6FCCB /* TrailTellerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC9EA7002E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_storiesUITests" */;
+			buildConfigurationList = DC9EA7002E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "TrailTellerUITests" */;
 			buildPhases = (
 				DC9EA6EC2E0CDD4B00C6FCCB /* Sources */,
 				DC9EA6ED2E0CDD4B00C6FCCB /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				DC9EA6F22E0CDD4B00C6FCCB /* PBXTargetDependency */,
 			);
-			name = waypoint_storiesUITests;
-			productName = waypoint_storiesUITests;
-			productReference = DC9EA6F02E0CDD4B00C6FCCB /* waypoint_storiesUITests.xctest */;
+			name = TrailTellerUITests;
+			productName = TrailTellerUITests;
+			productReference = DC9EA6F02E0CDD4B00C6FCCB /* TrailTellerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DC9EA6CB2E0CDD4800C6FCCB /* Build configuration list for PBXProject "waypoint_stories" */;
+			buildConfigurationList = DC9EA6CB2E0CDD4800C6FCCB /* Build configuration list for PBXProject "TrailTeller" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,9 +227,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC9EA6CF2E0CDD4800C6FCCB /* waypoint_stories */,
-				DC9EA6E52E0CDD4B00C6FCCB /* waypoint_storiesTests */,
-				DC9EA6EF2E0CDD4B00C6FCCB /* waypoint_storiesUITests */,
+				DC9EA6CF2E0CDD4800C6FCCB /* TrailTeller */,
+				DC9EA6E52E0CDD4B00C6FCCB /* TrailTellerTests */,
+				DC9EA6EF2E0CDD4B00C6FCCB /* TrailTellerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,8 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC9EA6D92E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld in Sources */,
-				DC9EA6D42E0CDD4800C6FCCB /* waypoint_storiesApp.swift in Sources */,
+				DC9EA6D92E0CDD4800C6FCCB /* TrailTeller.xcdatamodeld in Sources */,
+				DC9EA6D42E0CDD4800C6FCCB /* TrailTellerApp.swift in Sources */,
 				DC9EA6DB2E0CDD4800C6FCCB /* ContentView.swift in Sources */,
 				DC9EA6D62E0CDD4800C6FCCB /* Persistence.swift in Sources */,
 			);
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC9EA6EB2E0CDD4B00C6FCCB /* waypoint_storiesTests.swift in Sources */,
+				DC9EA6EB2E0CDD4B00C6FCCB /* TrailTellerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC9EA6F52E0CDD4B00C6FCCB /* waypoint_storiesUITests.swift in Sources */,
-				DC9EA6F72E0CDD4B00C6FCCB /* waypoint_storiesUITestsLaunchTests.swift in Sources */,
+				DC9EA6F52E0CDD4B00C6FCCB /* TrailTellerUITests.swift in Sources */,
+				DC9EA6F72E0CDD4B00C6FCCB /* TrailTellerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +294,12 @@
 /* Begin PBXTargetDependency section */
 		DC9EA6E82E0CDD4B00C6FCCB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC9EA6CF2E0CDD4800C6FCCB /* waypoint_stories */;
+			target = DC9EA6CF2E0CDD4800C6FCCB /* TrailTeller */;
 			targetProxy = DC9EA6E72E0CDD4B00C6FCCB /* PBXContainerItemProxy */;
 		};
 		DC9EA6F22E0CDD4B00C6FCCB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC9EA6CF2E0CDD4800C6FCCB /* waypoint_stories */;
+			target = DC9EA6CF2E0CDD4800C6FCCB /* TrailTeller */;
 			targetProxy = DC9EA6F12E0CDD4B00C6FCCB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -419,10 +419,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = waypoint_stories/waypoint_stories.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TrailTeller/TrailTeller.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"waypoint_stories/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TrailTeller/Preview Content\"";
 				DEVELOPMENT_TEAM = ANK327TBKQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -437,13 +437,14 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = TrailTeller;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-stories";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailteller";
+				PRODUCT_NAME = TrailTeller;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -457,10 +458,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = waypoint_stories/waypoint_stories.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TrailTeller/TrailTeller.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"waypoint_stories/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TrailTeller/Preview Content\"";
 				DEVELOPMENT_TEAM = ANK327TBKQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -475,13 +476,14 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_CFBundleDisplayName = TrailTeller;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-stories";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailteller";
+				PRODUCT_NAME = TrailTeller;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -502,14 +504,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-storiesTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailtellerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/waypoint_stories.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/waypoint_stories";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrailTeller.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrailTeller";
 			};
 			name = Debug;
 		};
@@ -525,14 +527,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-storiesTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailtellerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/waypoint_stories.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/waypoint_stories";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrailTeller.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrailTeller";
 			};
 			name = Release;
 		};
@@ -547,14 +549,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-storiesUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailtellerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = waypoint_stories;
+				TEST_TARGET_NAME = TrailTeller;
 			};
 			name = Debug;
 		};
@@ -569,21 +571,21 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.waypoint-storiesUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailtellerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = waypoint_stories;
+				TEST_TARGET_NAME = TrailTeller;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC9EA6CB2E0CDD4800C6FCCB /* Build configuration list for PBXProject "waypoint_stories" */ = {
+		DC9EA6CB2E0CDD4800C6FCCB /* Build configuration list for PBXProject "TrailTeller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC9EA6F82E0CDD4B00C6FCCB /* Debug */,
@@ -592,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC9EA6FA2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_stories" */ = {
+		DC9EA6FA2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "TrailTeller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC9EA6FB2E0CDD4B00C6FCCB /* Debug */,
@@ -601,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC9EA6FD2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_storiesTests" */ = {
+		DC9EA6FD2E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "TrailTellerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC9EA6FE2E0CDD4B00C6FCCB /* Debug */,
@@ -610,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC9EA7002E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "waypoint_storiesUITests" */ = {
+		DC9EA7002E0CDD4B00C6FCCB /* Build configuration list for PBXNativeTarget "TrailTellerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC9EA7012E0CDD4B00C6FCCB /* Debug */,
@@ -622,13 +624,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DC9EA6D72E0CDD4800C6FCCB /* waypoint_stories.xcdatamodeld */ = {
+		DC9EA6D72E0CDD4800C6FCCB /* TrailTeller.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DC9EA6D82E0CDD4800C6FCCB /* waypoint_stories.xcdatamodel */,
+				DC9EA6D82E0CDD4800C6FCCB /* TrailTeller.xcdatamodel */,
 			);
-			currentVersion = DC9EA6D82E0CDD4800C6FCCB /* waypoint_stories.xcdatamodel */;
-			path = waypoint_stories.xcdatamodeld;
+			currentVersion = DC9EA6D82E0CDD4800C6FCCB /* TrailTeller.xcdatamodel */;
+			path = TrailTeller.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

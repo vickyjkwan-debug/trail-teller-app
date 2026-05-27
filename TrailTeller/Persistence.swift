@@ -1,6 +1,6 @@
 //
 //  Persistence.swift
-//  waypoint_stories
+//  TrailTeller
 //
 //  Created by Victoria Kwan on 6/25/25.
 //
@@ -31,7 +31,7 @@ struct PersistenceController {
     let container: NSPersistentCloudKitContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentCloudKitContainer(name: "waypoint_stories")
+        container = NSPersistentCloudKitContainer(name: "TrailTeller")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
