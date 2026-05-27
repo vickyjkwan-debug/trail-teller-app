@@ -1,0 +1,158 @@
+name: iOS CI
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PROJECT: TrailTeller.xcodeproj
+  SCHEME: TrailTeller
+  CONFIGURATION: Debug
+  UNIT_TEST_TARGET: TrailTellerTests
+  UI_TEST_TARGET: TrailTellerUITests
+  DESTINATION: platform=iOS Simulator,name=iPhone 16,OS=latest
+  XCODE_VERSION: "16.4"
+  DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+
+jobs:
+  build-and-unit-tests:
+    name: Build and unit tests
+    runs-on: macos-15
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Restore build caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            ./.ci/DerivedData
+            ~/.swiftpm
+            ~/Library/Caches/org.swift.swiftpm
+          key: ${{ runner.os }}-xcode-${{ env.XCODE_VERSION }}-unit-${{ hashFiles('TrailTeller.xcodeproj/project.pbxproj', '.github/workflows/ios-ci.yml', '**/*.swift') }}
+          restore-keys: |
+            ${{ runner.os }}-xcode-${{ env.XCODE_VERSION }}-unit-
+            ${{ runner.os }}-xcode-${{ env.XCODE_VERSION }}-
+
+      - name: Show build environment
+        run: |
+          xcodebuild -version
+          xcodebuild -showsdks
+          xcodebuild -list -project "$PROJECT"
+
+      - name: Build and run unit tests
+        run: |
+          set -euo pipefail
+
+          RESULT_BUNDLE_PATH="$RUNNER_TEMP/TrailTeller-Unit.xcresult"
+          rm -rf "$RESULT_BUNDLE_PATH"
+
+          if command -v xcbeautify >/dev/null; then
+            xcodebuild \
+              -project "$PROJECT" \
+              -scheme "$SCHEME" \
+              -configuration "$CONFIGURATION" \
+              -destination "$DESTINATION" \
+              -derivedDataPath ".ci/DerivedData" \
+              -resultBundlePath "$RESULT_BUNDLE_PATH" \
+              -showBuildTimingSummary \
+              test \
+              CODE_SIGNING_ALLOWED=NO \
+              -only-testing:"$UNIT_TEST_TARGET" | xcbeautify
+          else
+            xcodebuild \
+              -project "$PROJECT" \
+              -scheme "$SCHEME" \
+              -configuration "$CONFIGURATION" \
+              -destination "$DESTINATION" \
+              -derivedDataPath ".ci/DerivedData" \
+              -resultBundlePath "$RESULT_BUNDLE_PATH" \
+              -showBuildTimingSummary \
+              test \
+              CODE_SIGNING_ALLOWED=NO \
+              -only-testing:"$UNIT_TEST_TARGET"
+          fi
+
+      - name: Upload unit test result bundle
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: TrailTeller-Unit.xcresult
+          path: ${{ runner.temp }}/TrailTeller-Unit.xcresult
+          if-no-files-found: ignore
+          retention-days: 7
+
+  ui-tests:
+    name: UI tests
+    needs: build-and-unit-tests
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    runs-on: macos-15
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Restore build caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            ./.ci/DerivedData
+            ~/.swiftpm
+            ~/Library/Caches/org.swift.swiftpm
+          key: ${{ runner.os }}-xcode-${{ env.XCODE_VERSION }}-ui-${{ hashFiles('TrailTeller.xcodeproj/project.pbxproj', '.github/workflows/ios-ci.yml', '**/*.swift') }}
+          restore-keys: |
+            ${{ runner.os }}-xcode-${{ env.XCODE_VERSION }}-ui-
+            ${{ runner.os }}-xcode-${{ env.XCODE_VERSION }}-
+
+      - name: Run UI tests
+        run: |
+          set -euo pipefail
+
+          RESULT_BUNDLE_PATH="$RUNNER_TEMP/TrailTeller-UI.xcresult"
+          rm -rf "$RESULT_BUNDLE_PATH"
+
+          if command -v xcbeautify >/dev/null; then
+            xcodebuild \
+              -project "$PROJECT" \
+              -scheme "$SCHEME" \
+              -configuration "$CONFIGURATION" \
+              -destination "$DESTINATION" \
+              -derivedDataPath ".ci/DerivedData" \
+              -resultBundlePath "$RESULT_BUNDLE_PATH" \
+              -showBuildTimingSummary \
+              test \
+              CODE_SIGNING_ALLOWED=NO \
+              -only-testing:"$UI_TEST_TARGET" | xcbeautify
+          else
+            xcodebuild \
+              -project "$PROJECT" \
+              -scheme "$SCHEME" \
+              -configuration "$CONFIGURATION" \
+              -destination "$DESTINATION" \
+              -derivedDataPath ".ci/DerivedData" \
+              -resultBundlePath "$RESULT_BUNDLE_PATH" \
+              -showBuildTimingSummary \
+              test \
+              CODE_SIGNING_ALLOWED=NO \
+              -only-testing:"$UI_TEST_TARGET"
+          fi
+
+      - name: Upload UI test result bundle
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: TrailTeller-UI.xcresult
+          path: ${{ runner.temp }}/TrailTeller-UI.xcresult
+          if-no-files-found: ignore
+          retention-days: 7

@@ -1,0 +1,35 @@
+minimum_pre_commit_version: "3.7.0"
+default_install_hook_types:
+  - pre-commit
+  - pre-push
+repos:
+  - repo: local
+    hooks:
+      - id: swiftformat
+        name: swiftformat
+        entry: swiftformat --quiet
+        language: system
+        files: \.swift$
+        stages:
+          - pre-commit
+
+      - id: swiftlint
+        name: swiftlint
+        entry: swiftlint lint --strict --force-exclude
+        language: system
+        files: \.swift$
+        stages:
+          - pre-commit
+
+      - id: xcodebuild-build-for-testing
+        name: xcodebuild build-for-testing (iOS Simulator)
+        entry: >-
+          bash -lc "xcodebuild -project TrailTeller.xcodeproj -scheme
+          TrailTeller -configuration Debug -destination
+          'generic/platform=iOS Simulator' build-for-testing
+          CODE_SIGNING_ALLOWED=NO"
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages:
+          - pre-push
