@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0AC37F2FC8DAF500E0C856 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = DC0AC37E2FC8DAF500E0C856 /* LiveKit */; };
+		DC0AC3822FC8DB1700E0C856 /* LiveKitComponents in Frameworks */ = {isa = PBXBuildFile; productRef = DC0AC3812FC8DB1700E0C856 /* LiveKitComponents */; };
 		DC9EA6D42E0CDD4800C6FCCB /* TrailTellerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D32E0CDD4800C6FCCB /* TrailTellerApp.swift */; };
 		DC9EA6D62E0CDD4800C6FCCB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D52E0CDD4800C6FCCB /* Persistence.swift */; };
 		DC9EA6D92E0CDD4800C6FCCB /* TrailTeller.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC9EA6D72E0CDD4800C6FCCB /* TrailTeller.xcdatamodeld */; };
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC0AC3832FC8DBAC00E0C856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC9EA6D02E0CDD4800C6FCCB /* TrailTeller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailTeller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9EA6D32E0CDD4800C6FCCB /* TrailTellerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailTellerApp.swift; sourceTree = "<group>"; };
 		DC9EA6D52E0CDD4800C6FCCB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -56,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0AC37F2FC8DAF500E0C856 /* LiveKit in Frameworks */,
+				DC0AC3822FC8DB1700E0C856 /* LiveKitComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +104,7 @@
 		DC9EA6D22E0CDD4800C6FCCB /* TrailTeller */ = {
 			isa = PBXGroup;
 			children = (
+				DC0AC3832FC8DBAC00E0C856 /* Info.plist */,
 				DC9EA6D32E0CDD4800C6FCCB /* TrailTellerApp.swift */,
 				DC9EA6D52E0CDD4800C6FCCB /* Persistence.swift */,
 				DC9EA6DA2E0CDD4800C6FCCB /* ContentView.swift */,
@@ -151,6 +157,10 @@
 			dependencies = (
 			);
 			name = TrailTeller;
+			packageProductDependencies = (
+				DC0AC37E2FC8DAF500E0C856 /* LiveKit */,
+				DC0AC3812FC8DB1700E0C856 /* LiveKitComponents */,
+			);
 			productName = TrailTeller;
 			productReference = DC9EA6D02E0CDD4800C6FCCB /* TrailTeller.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +233,10 @@
 				Base,
 			);
 			mainGroup = DC9EA6C72E0CDD4800C6FCCB;
+			packageReferences = (
+				DC0AC37D2FC8DAF500E0C856 /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
+				DC0AC3802FC8DB1700E0C856 /* XCRemoteSwiftPackageReference "components-swift" */,
+			);
 			productRefGroup = DC9EA6D12E0CDD4800C6FCCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -427,6 +441,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrailTeller/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TrailTeller;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) uses your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) uses your microphone";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -437,13 +455,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_CFBundleDisplayName = TrailTeller;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailteller";
+				PRODUCT_BUNDLE_IDENTIFIER = vkwan.trailteller;
 				PRODUCT_NAME = TrailTeller;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -466,6 +483,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrailTeller/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TrailTeller;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) uses your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) uses your microphone";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -476,13 +497,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_CFBundleDisplayName = TrailTeller;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailteller";
+				PRODUCT_BUNDLE_IDENTIFIER = vkwan.trailteller;
 				PRODUCT_NAME = TrailTeller;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -504,7 +524,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailtellerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = vkwan.trailtellerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -527,7 +547,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailtellerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = vkwan.trailtellerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -549,7 +569,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailtellerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = vkwan.trailtellerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -571,7 +591,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "vkwan.trailtellerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = vkwan.trailtellerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -622,6 +642,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC0AC37D2FC8DAF500E0C856 /* XCRemoteSwiftPackageReference "client-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.0;
+			};
+		};
+		DC0AC3802FC8DB1700E0C856 /* XCRemoteSwiftPackageReference "components-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/components-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC0AC37E2FC8DAF500E0C856 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC0AC37D2FC8DAF500E0C856 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+		DC0AC3812FC8DB1700E0C856 /* LiveKitComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC0AC3802FC8DB1700E0C856 /* XCRemoteSwiftPackageReference "components-swift" */;
+			productName = LiveKitComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DC9EA6D72E0CDD4800C6FCCB /* TrailTeller.xcdatamodeld */ = {
