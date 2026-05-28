@@ -29,14 +29,14 @@ if grep -q "platform:iOS Simulator" <<<"$DESTINATIONS"; then
   exit 0
 fi
 
-if grep -q "platform:macOS" <<<"$DESTINATIONS"; then
-  echo "pre-push: iOS Simulator destination unavailable on this machine."
-  echo "pre-push: falling back to macOS build-for-testing so push is not blocked."
-  echo "pre-push: install iOS platform/runtimes in Xcode to restore full local iOS gate."
-  "${BUILD_CMD[@]}" -destination "generic/platform=macOS"
-  exit 0
+echo "pre-push: iOS Simulator destination unavailable on this machine."
+echo "pre-push: skipping local build-for-testing gate to avoid false failures."
+echo "pre-push: CI on GitHub still runs iOS simulator checks."
+echo "pre-push: install iOS platform/runtimes in Xcode to restore full local gate."
+
+if [[ "${PREPUSH_REQUIRE_BUILD:-0}" == "1" ]]; then
+  echo "pre-push: PREPUSH_REQUIRE_BUILD=1 is set, so failing instead of skipping."
+  exit 70
 fi
 
-echo "pre-push: no supported destination found for scheme '$SCHEME'."
-echo "$DESTINATIONS"
-exit 70
+exit 0

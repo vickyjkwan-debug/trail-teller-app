@@ -110,8 +110,9 @@ Local Xcode platform note:
 
 - The pre-push script is `scripts/pre-push-build-for-testing.sh`.
 - It tries `generic/platform=iOS Simulator` first.
-- If your local Xcode install does not have iOS Simulator destinations available, it falls back to `generic/platform=macOS` with a warning so your push is not blocked.
+- If your local Xcode install does not have iOS Simulator destinations available, it skips the local build gate with a warning so your push is not blocked.
 - CI still runs the iOS simulator lanes on GitHub macOS runners.
+- Set `PREPUSH_REQUIRE_BUILD=1` to force the hook to fail instead of skip when iOS simulator is unavailable.
 
 Install once on your machine:
 
