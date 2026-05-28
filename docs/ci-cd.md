@@ -98,13 +98,20 @@ It runs:
 
 - `swiftformat` on changed `.swift` files at commit time
 - `swiftlint lint --strict` on changed `.swift` files at commit time
-- `xcodebuild ... build-for-testing` on push (iOS Simulator target, no code signing)
+- `xcodebuild ... build-for-testing` on push (prefers iOS Simulator, falls back to macOS if simulator platform is unavailable)
 
 Hook speed notes:
 
 - `pre-commit` is configured with `fail_fast: true`, so it stops at the first failing hook.
 - `swiftlint` runs in script-input-files mode on staged Swift files instead of broad repo linting.
 - First run is usually slower than later runs.
+
+Local Xcode platform note:
+
+- The pre-push script is `scripts/pre-push-build-for-testing.sh`.
+- It tries `generic/platform=iOS Simulator` first.
+- If your local Xcode install does not have iOS Simulator destinations available, it falls back to `generic/platform=macOS` with a warning so your push is not blocked.
+- CI still runs the iOS simulator lanes on GitHub macOS runners.
 
 Install once on your machine:
 

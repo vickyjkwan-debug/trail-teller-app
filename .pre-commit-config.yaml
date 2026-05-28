@@ -28,11 +28,7 @@ repos:
 
       - id: xcodebuild-build-for-testing
         name: xcodebuild build-for-testing (iOS Simulator)
-        entry: >-
-          bash -lc "xcodebuild -project TrailTeller.xcodeproj -scheme
-          TrailTeller -configuration Debug -destination
-          'generic/platform=iOS Simulator' build-for-testing
-          CODE_SIGNING_ALLOWED=NO"
+        entry: bash scripts/pre-push-build-for-testing.sh
         language: system
         pass_filenames: false
         always_run: true
